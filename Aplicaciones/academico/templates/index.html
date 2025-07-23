@@ -16,7 +16,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="{% static 'plantilla/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -45,26 +47,25 @@
           <li><a href="#services">Servicios</a></li>
           <li><a href="#features">Características</a></li>
           <li><a href="#team">Equipo</a></li>
-          <li><a href="{% static 'apk/app_release.apk' %}" download>Descargar APK</a></li>  
-          
-          
+          <li><a href="{% static 'apk/app_release.apk' %}" download>Descargar APK</a></li>
+
+
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-     
+
     </div>
   </header><!-- End Header -->
 
   <main class="main">
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="hero section dark-background">
-      <img src="{% static 'plantilla/assets/img/hero-academico.jpg' %}" alt="" data-aos="fade-in">
-      <div class="container d-flex flex-column align-items-center">
+    <section id="hero" class="hero section dark-background" style="position: relative; background-image: url('{% static 'plantilla/assets/img/about-2.jpg' %}'); background-size: cover; background-position: center;">
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5);"></div>
+      <div class="container d-flex flex-column align-items-center" style="position: relative; z-index: 1;">
         <h2 data-aos="fade-up" data-aos-delay="100">PLATAFORMA INTEGRAL DE GESTIÓN EDUCATIVA</h2>
         <p data-aos="fade-up" data-aos-delay="200">Optimiza los procesos académicos y administrativos de tu institución</p>
-        
       </div>
     </section><!-- End Hero Section -->
 
@@ -75,8 +76,10 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3>Transformando la gestión educativa</h3>
             <img src="{% static 'plantilla/assets/img/about-academico.jpg' %}" class="img-fluid rounded-4 mb-4" alt="">
-            <p>Nuestra plataforma ofrece una solución completa para la administración de instituciones educativas, integrando todos los procesos académicos en un solo lugar.</p>
-            <p>Facilitamos la comunicación entre estudiantes, profesores y administradores, mejorando la eficiencia y la experiencia educativa para toda la comunidad.</p>
+            <p>Nuestra plataforma ofrece una solución completa para la administración de instituciones educativas,
+              integrando todos los procesos académicos en un solo lugar.</p>
+            <p>Facilitamos la comunicación entre estudiantes, profesores y administradores, mejorando la eficiencia y la
+              experiencia educativa para toda la comunidad.</p>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
             <div class="content ps-0 ps-lg-5">
@@ -84,12 +87,16 @@
                 "La tecnología educativa que simplifica la gestión y potencia el aprendizaje"
               </p>
               <ul>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Gestión centralizada de estudiantes, profesores y cursos</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Control de asistencia y calificaciones en tiempo real</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Comunicación integrada entre todos los actores del proceso educativo</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Gestión centralizada de estudiantes, profesores y
+                    cursos</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Control de asistencia y calificaciones en tiempo
+                    real</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Comunicación integrada entre todos los actores del
+                    proceso educativo</span></li>
               </ul>
               <p>
-                Nuestro sistema está diseñado para adaptarse a las necesidades de instituciones de todos los tamaños, desde pequeñas academias hasta grandes universidades.
+                Nuestro sistema está diseñado para adaptarse a las necesidades de instituciones de todos los tamaños,
+                desde pequeñas academias hasta grandes universidades.
               </p>
 
               <div class="position-relative mt-4">
@@ -110,7 +117,8 @@
             <div class="stats-item d-flex align-items-center w-100 h-100">
               <i class="bi bi-people color-blue flex-shrink-0"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="125" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="125" data-purecounter-duration="1"
+                  class="purecounter"></span>
                 <p>Instituciones</p>
               </div>
             </div>
@@ -120,7 +128,8 @@
             <div class="stats-item d-flex align-items-center w-100 h-100">
               <i class="bi bi-person-check color-orange flex-shrink-0"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="8500" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="8500" data-purecounter-duration="1"
+                  class="purecounter"></span>
                 <p>Estudiantes</p>
               </div>
             </div>
@@ -130,7 +139,8 @@
             <div class="stats-item d-flex align-items-center w-100 h-100">
               <i class="bi bi-book color-green flex-shrink-0"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="3200" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="3200" data-purecounter-duration="1"
+                  class="purecounter"></span>
                 <p>Cursos</p>
               </div>
             </div>
@@ -140,7 +150,8 @@
             <div class="stats-item d-flex align-items-center w-100 h-100">
               <i class="bi bi-award color-pink flex-shrink-0"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+                  class="purecounter"></span>
                 <p>Años de experiencia</p>
               </div>
             </div>
@@ -322,85 +333,6 @@
       </div>
     </section><!-- End Features Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section dark-background">
-      <img src="{% static 'plantilla/assets/img/testimonials-bg.jpg' %}" class="testimonials-bg" alt="">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="section-title">
-          <h2>Testimonios</h2>
-          <p>QUÉ DICEN NUESTROS CLIENTES</p>
-        </div>
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{% static 'plantilla/assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
-                <h3>Dr. Carlos Méndez</h3>
-                <h4>Rector, Universidad Tecnológica</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Esta plataforma ha transformado completamente nuestra gestión académica. Ahora todo el proceso es más eficiente y transparente.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{% static 'plantilla/assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
-                <h3>Prof. Laura González</h3>
-                <h4>Coordinadora Académica</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>La facilidad para registrar calificaciones y generar reportes ha reducido nuestro trabajo administrativo en un 60%.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{% static 'plantilla/assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
-                <h3>Ana Rodríguez</h3>
-                <h4>Estudiante</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Me encanta poder ver mis calificaciones, horarios y tareas desde mi teléfono. La app es muy fácil de usar.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section><!-- End Testimonials Section -->
-
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section light-background">
       <div class="container section-title" data-aos="fade-up">
@@ -410,120 +342,105 @@
 
       <div class="container">
         <div class="row gy-5">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <div class="pic"><img src="{% static 'plantilla/assets/img/team/team-1.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="pic">
+                <img src="{% static 'plantilla/assets/img/team/team1.jpg' %}" class="img-fluid" alt="">
+              </div>
               <div class="member-info">
-                <h4>Dr. Alejandro Pérez</h4>
+                <h4>Ing. Kevin Chugchilan</h4>
                 <span>Director de Desarrollo</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <div class="pic"><img src="{% static 'plantilla/assets/img/team/team-2.jpg' %}" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Ing. Sofía Ramírez</h4>
-                <span>Líder de Producto</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <div class="pic"><img src="{% static 'plantilla/assets/img/team/team-3.jpg' %}" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Lic. Carlos Jiménez</h4>
-                <span>Especialista en Educación</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-        </div>
-      </div>
-    </section><!-- End Team Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contacto</h2>
-        <p>CONTÁCTANOS PARA MÁS INFORMACIÓN</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-          <div class="col-lg-6">
-            <div class="row gy-4">
-              <div class="col-lg-12">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
-                  <i class="bi bi-geo-alt"></i>
-                  <h3>Dirección</h3>
-                  <p>Av. Universidad 123, Ciudad Educativa</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
-                  <i class="bi bi-telephone"></i>
-                  <h3>Teléfono</h3>
-                  <p>+1 234 567 8900</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
-                  <i class="bi bi-envelope"></i>
-                  <h3>Email</h3>
-                  <p>info@gestionacademica.com</p>
-                </div>
-              </div><!-- End Info Item -->
             </div>
           </div>
 
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
-              <div class="row gy-4">
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Nombre" required>
-                </div>
 
-                <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Email" required>
-                </div>
 
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Asunto" required>
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="4" placeholder="Mensaje" required></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Cargando</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
-
-                  <button type="submit">Enviar Mensaje</button>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="pic">
+                <img src="{% static 'plantilla/assets/img/team/team3.jpg' %}" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Ing. Deysi Díaz</h4>
+                <span>Arquitecto de Softwar</span>
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
-            </form>
-          </div><!-- End Contact Form -->
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="pic">
+                <img src="{% static 'plantilla/assets/img/team/team2.jpg' %}" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Ing. Darwin Ilaquize</h4>
+                <span>Desarrollador Frontend</span>
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="pic">
+                <img src="{% static 'plantilla/assets/img/team/team4.jpg' %}" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Ing. Salomé Agila</h4>
+                <span>Desarrollador Backend</span>
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section><!-- End Contact Section -->
+
+      <style>
+        /* Tamaño fijo para las imágenes */
+        .team .member .pic {
+          width: 100%;
+          height: 280px;
+          /* Puedes ajustar esta altura */
+          overflow: hidden;
+          border-radius: 8px;
+          /* opcional: bordes redondeados */
+        }
+
+        /* Hace que la imagen llene el contenedor sin deformarse */
+        .team .member .pic img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+      </style>
+    </section><!-- End Team Section -->
+
+
+
 
   </main><!-- End #main -->
 
@@ -573,7 +490,8 @@
           <h4>Boletín Informativo</h4>
           <p>Suscríbete para recibir las últimas actualizaciones y noticias</p>
           <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email" placeholder="Tu correo"><input type="submit" value="Suscribirse"></div>
+            <div class="newsletter-form"><input type="email" name="email" placeholder="Tu correo"><input type="submit"
+                value="Suscribirse"></div>
             <div class="loading">Cargando</div>
             <div class="error-message"></div>
             <div class="sent-message">¡Gracias por suscribirte!</div>
@@ -583,7 +501,8 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>&copy; <span>Copyright</span> <strong class="px-1 sitename">Gestión Académica</strong> <span>Todos los derechos reservados</span></p>
+      <p>&copy; <span>Copyright</span> <strong class="px-1 sitename">Gestión Académica</strong> <span>Todos los derechos
+          reservados</span></p>
       <div class="credits">
         Diseñado por <a href="#">TuEquipo</a>
       </div>
@@ -591,7 +510,8 @@
   </footer><!-- End Footer -->
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -610,4 +530,5 @@
   <script src="{% static 'plantilla/assets/js/main.js' %}"></script>
 
 </body>
+
 </html>
