@@ -1,0 +1,613 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Sistema de Gestión Académica</title>
+  <meta name="description" content="Plataforma integral para la gestión educativa">
+  <meta name="keywords" content="académico, educación, gestión, plataforma, estudiantes, profesores">
+
+  <!-- Favicons -->
+  <link href="{% static 'plantilla/assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'plantilla/assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'plantilla/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'plantilla/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'plantilla/assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'plantilla/assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'plantilla/assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'plantilla/assets/css/main.css' %}" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">Gestión Académica</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Inicio</a></li>
+          <li><a href="#about">Acerca de</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#features">Características</a></li>
+          <li><a href="#team">Equipo</a></li>
+          <li><a href="{% static 'apk/app_release.apk' %}" download>Descargar APK</a></li>  
+          
+          
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+     
+    </div>
+  </header><!-- End Header -->
+
+  <main class="main">
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero section dark-background">
+      <img src="{% static 'plantilla/assets/img/hero-academico.jpg' %}" alt="" data-aos="fade-in">
+      <div class="container d-flex flex-column align-items-center">
+        <h2 data-aos="fade-up" data-aos-delay="100">PLATAFORMA INTEGRAL DE GESTIÓN EDUCATIVA</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Optimiza los procesos académicos y administrativos de tu institución</p>
+        
+      </div>
+    </section><!-- End Hero Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3>Transformando la gestión educativa</h3>
+            <img src="{% static 'plantilla/assets/img/about-academico.jpg' %}" class="img-fluid rounded-4 mb-4" alt="">
+            <p>Nuestra plataforma ofrece una solución completa para la administración de instituciones educativas, integrando todos los procesos académicos en un solo lugar.</p>
+            <p>Facilitamos la comunicación entre estudiantes, profesores y administradores, mejorando la eficiencia y la experiencia educativa para toda la comunidad.</p>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                "La tecnología educativa que simplifica la gestión y potencia el aprendizaje"
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Gestión centralizada de estudiantes, profesores y cursos</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Control de asistencia y calificaciones en tiempo real</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Comunicación integrada entre todos los actores del proceso educativo</span></li>
+              </ul>
+              <p>
+                Nuestro sistema está diseñado para adaptarse a las necesidades de instituciones de todos los tamaños, desde pequeñas academias hasta grandes universidades.
+              </p>
+
+              <div class="position-relative mt-4">
+                <img src="{% static 'plantilla/assets/img/about-2.jpg' %}" class="img-fluid rounded-4" alt="">
+                <a href="https://www.youtube.com/watch?v=ejemplo" class="glightbox pulsating-play-btn"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Stats Section ======= -->
+    <section id="stats" class="stats section light-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-people color-blue flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="125" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Instituciones</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-person-check color-orange flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="8500" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Estudiantes</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-book color-green flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="3200" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Cursos</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-award color-pink flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Años de experiencia</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+        </div>
+      </div>
+    </section><!-- End Stats Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Servicios</h2>
+        <p>NUESTRAS SOLUCIONES ACADÉMICAS</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-5">
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item">
+              <div class="img">
+                <img src="{% static 'plantilla/assets/img/services-1.jpg' %}" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-people"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Gestión Estudiantil</h3>
+                </a>
+                <p>Administración completa de datos de estudiantes, historial académico y procesos de matrícula.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="img">
+                <img src="{% static 'plantilla/assets/img/services-2.jpg' %}" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-journal-bookmark"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Planeación Académica</h3>
+                </a>
+                <p>Herramientas para diseño curricular, programación de cursos y asignación de profesores.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="img">
+                <img src="{% static 'plantilla/assets/img/services-3.jpg' %}" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-graph-up"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Seguimiento Académico</h3>
+                </a>
+                <p>Registro y análisis de calificaciones, asistencia y rendimiento estudiantil.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features section">
+      <div class="container">
+        <ul class="nav nav-tabs row  d-flex" data-aos="fade-up" data-aos-delay="100">
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+              <i class="bi bi-laptop"></i>
+              <h4 class="d-none d-lg-block">Plataforma Web</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+              <i class="bi bi-phone"></i>
+              <h4 class="d-none d-lg-block">Aplicación Móvil</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+              <i class="bi bi-cloud"></i>
+              <h4 class="d-none d-lg-block">En la Nube</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
+              <i class="bi bi-shield-lock"></i>
+              <h4 class="d-none d-lg-block">Seguridad</h4>
+            </a>
+          </li>
+        </ul><!-- End Tab Nav -->
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+          <div class="tab-pane fade active show" id="features-tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Acceso desde cualquier dispositivo con conexión a internet</h3>
+                <p class="fst-italic">
+                  Nuestra plataforma web responsive se adapta a cualquier pantalla
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> Interfaz intuitiva y fácil de usar</li>
+                  <li><i class="bi bi-check2-all"></i> Compatible con todos los navegadores modernos</li>
+                  <li><i class="bi bi-check2-all"></i> Actualizaciones automáticas sin necesidad de instalación</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'plantilla/assets/img/features-1.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+          <div class="tab-pane fade" id="features-tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Gestión académica desde tu móvil</h3>
+                <p>
+                  Aplicación disponible para iOS y Android con todas las funcionalidades principales
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> Notificaciones push instantáneas</li>
+                  <li><i class="bi bi-check2-all"></i> Acceso sin conexión a datos importantes</li>
+                  <li><i class="bi bi-check2-all"></i> Sincronización automática cuando recuperas conexión</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'plantilla/assets/img/features-2.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+          <div class="tab-pane fade" id="features-tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Alojamiento seguro en la nube</h3>
+                <p>
+                  No necesitas servidores locales ni mantenimiento de infraestructura
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> Escalabilidad automática según demanda</li>
+                  <li><i class="bi bi-check2-all"></i> Copias de seguridad diarias</li>
+                  <li><i class="bi bi-check2-all"></i> 99.9% tiempo de actividad garantizado</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'plantilla/assets/img/features-3.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+          <div class="tab-pane fade" id="features-tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Protección de datos sensible</h3>
+                <p>
+                  Implementamos los más altos estándares de seguridad para proteger tu información
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> Encriptación de extremo a extremo</li>
+                  <li><i class="bi bi-check2-all"></i> Autenticación de múltiples factores</li>
+                  <li><i class="bi bi-check2-all"></i> Cumplimiento con regulaciones de protección de datos</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'plantilla/assets/img/features-4.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+        </div>
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section dark-background">
+      <img src="{% static 'plantilla/assets/img/testimonials-bg.jpg' %}" class="testimonials-bg" alt="">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-title">
+          <h2>Testimonios</h2>
+          <p>QUÉ DICEN NUESTROS CLIENTES</p>
+        </div>
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'plantilla/assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
+                <h3>Dr. Carlos Méndez</h3>
+                <h4>Rector, Universidad Tecnológica</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Esta plataforma ha transformado completamente nuestra gestión académica. Ahora todo el proceso es más eficiente y transparente.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'plantilla/assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+                <h3>Prof. Laura González</h3>
+                <h4>Coordinadora Académica</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>La facilidad para registrar calificaciones y generar reportes ha reducido nuestro trabajo administrativo en un 60%.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'plantilla/assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
+                <h3>Ana Rodríguez</h3>
+                <h4>Estudiante</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Me encanta poder ver mis calificaciones, horarios y tareas desde mi teléfono. La app es muy fácil de usar.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Equipo</h2>
+        <p>NUESTROS PROFESIONALES</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="pic"><img src="{% static 'plantilla/assets/img/team/team-1.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dr. Alejandro Pérez</h4>
+                <span>Director de Desarrollo</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="pic"><img src="{% static 'plantilla/assets/img/team/team-2.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Ing. Sofía Ramírez</h4>
+                <span>Líder de Producto</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="pic"><img src="{% static 'plantilla/assets/img/team/team-3.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Lic. Carlos Jiménez</h4>
+                <span>Especialista en Educación</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+        </div>
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contacto</h2>
+        <p>CONTÁCTANOS PARA MÁS INFORMACIÓN</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="row gy-4">
+              <div class="col-lg-12">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Dirección</h3>
+                  <p>Av. Universidad 123, Ciudad Educativa</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Teléfono</h3>
+                  <p>+1 234 567 8900</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email</h3>
+                  <p>info@gestionacademica.com</p>
+                </div>
+              </div><!-- End Info Item -->
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Nombre" required>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Asunto" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="4" placeholder="Mensaje" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Cargando</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
+
+                  <button type="submit">Enviar Mensaje</button>
+                </div>
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer dark-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Gestión Académica</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Plataforma integral para instituciones educativas</p>
+            <p class="mt-3"><strong>Teléfono:</strong> <span>+1 234 567 8900</span></p>
+            <p><strong>Email:</strong> <span>info@gestionacademica.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Enlaces</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#hero">Inicio</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#about">Acerca de</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">Servicios</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Términos de servicio</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Política de privacidad</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Servicios</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Gestión Estudiantil</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Planeación Académica</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Seguimiento Académico</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Reportes y Análisis</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Boletín Informativo</h4>
+          <p>Suscríbete para recibir las últimas actualizaciones y noticias</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email" placeholder="Tu correo"><input type="submit" value="Suscribirse"></div>
+            <div class="loading">Cargando</div>
+            <div class="error-message"></div>
+            <div class="sent-message">¡Gracias por suscribirte!</div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>&copy; <span>Copyright</span> <strong class="px-1 sitename">Gestión Académica</strong> <span>Todos los derechos reservados</span></p>
+      <div class="credits">
+        Diseñado por <a href="#">TuEquipo</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'plantilla/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'plantilla/assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'plantilla/assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'plantilla/assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'plantilla/assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'plantilla/assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'plantilla/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'plantilla/assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'plantilla/assets/js/main.js' %}"></script>
+
+</body>
+</html>
